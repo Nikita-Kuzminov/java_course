@@ -1,3 +1,5 @@
+package com.innopolis.LocalMinimum;
+
 import java.lang.reflect.Array;
 
 public class LocalMinimum {
