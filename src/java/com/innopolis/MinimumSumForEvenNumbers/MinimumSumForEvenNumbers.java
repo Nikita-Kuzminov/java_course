@@ -16,8 +16,12 @@ public class MinimumSumForEvenNumbers {
             if (a % 2 == 0) {
 
                 while (a != 0) {
+                    //запоминаем последнюю цифру, так как
+                    //оператор «/» - это остаток от деления
                     int lastDigit = a % 10;
                     digitsSum = digitsSum + lastDigit;
+                    //отбрасываем от исходного числа последнюю цифру, так как
+                    //оператор «/» - это деление на число без остатка
                     a = a / 10;
                 }
 
@@ -29,5 +33,12 @@ public class MinimumSumForEvenNumbers {
             a = scanner.nextInt();
         }
         System.out.println("Result - " + minDigitsSum);
+
     }
 }
+
+//Ниже представлен метод считывания аргументов, передаваемых в командную строку
+//while (i < args.length) {
+//    System.out.println(args[i]);
+//    i++;
+//    }
