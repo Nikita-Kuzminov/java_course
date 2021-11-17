@@ -14,7 +14,7 @@ public class FindTheBug {
         }
         WebDriverHelper wd = new WebDriverHelper();
         List<String> result = new ArrayList<>();
-        result.add(wd.getElements(path));
+        result.add(wd.getElements(path));     // не существует метод getElements для объектов
 
         if (result.isEmpty()) {                                // в данном условии проверяется пустой ли список result,
             // в случае true, список пуст, мы идём дальше. И в следующем же цикле for мы должны пробежаться по каждому
@@ -33,9 +33,9 @@ public class FindTheBug {
             // выполняется следующий блок кода. В то же время в этом же блоке находится фраза "Нет ни одного элемента
             // в этом пути". Нарушена логика
             System.out.println("There aren't any elements by this path");
-            return;              //превратить getSomeElements возвращающим void
+            return;              // ничего не возвращется после return. По идее, должно быть написано "-1"
         }
 
-        return result;
+        return result;      // метод getSomeElements ничего не возвращает
     }
 }
