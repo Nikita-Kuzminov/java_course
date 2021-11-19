@@ -1,4 +1,4 @@
-package com.innopolis.task_from_inttrust;
+/*package com.innopolis.task_from_inttrust;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,3 +39,4 @@ public class FindTheBug {
         return result;      // метод getSomeElements ничего не возвращает
     }
 }
+*/
