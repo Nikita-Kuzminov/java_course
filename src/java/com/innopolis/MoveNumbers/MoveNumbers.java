@@ -15,13 +15,15 @@ public class MoveNumbers {
                 count++;
             }
         }
-
         return newArray;
     }
 
     public static void main(String[] args) {
         int[] array = {1, 0, 2, 0, 3, 0, 0, 0};
         System.out.println(Arrays.toString(shiftZeroToRight(array)));
+//        for (int i = 0; i < array.length; i++) {
+//            System.out.println(array[i]);
+//        }
 
     }
 }
