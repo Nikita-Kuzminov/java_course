@@ -1,4 +1,4 @@
-package com.innopolis;
+package com.innopolis.NumbersSort;
 
 import java.util.Arrays;
 
@@ -14,9 +14,9 @@ public class NumbersSort {
                     minIndex = j;
                 }
             }
-            int temp = array[i];
-            array[i] = array[minIndex];
-            array[minIndex] = temp;
+
+            array[minIndex] = array[i];
+            array[i] = min;
 
             System.out.println(Arrays.toString(array));
         }
