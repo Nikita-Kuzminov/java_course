@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class MinimumCount {
 
-    public static void selectionSort(int[] array) {
+    public static int[] selectionSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int min = array[i];
             int minIndex = i;
@@ -26,23 +26,21 @@ public class MinimumCount {
 
         }
         System.out.println(Arrays.toString(array));
+        return array;
     }
 
-    public static void searchIndexOfMinimumCountNumber(int[] array) {
-        int count = 0;
-        int count1 = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i+1] == array[i]) {
-                count++;
-            } else if (array[i+2] == array[i]) {
-                count1++;
-            }
+    public static int searchIndexOfMinimumCountNumber(int[] array) {
+        int count = array[0];
+        int countMin = array[0];
+
+        for (int k = 0; k < array.length; k++) {
+
         }
     }
 
     public static void main(String[] args) {
         int[] a = {2, 1, 2};
-        selectionSort(a);
-//        searchIndexOfMinimumCountNumber(a);
+        int[] sortedArray = selectionSort(a);
+        int minimumCount = searchIndexOfMinimumCountNumber(sortedArray);
     }
 }
